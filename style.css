@@ -8,19 +8,19 @@
 /* ===== ROOT COLORS ===== */
 :root {
   --bg-dark: #0b0618;
-  --bg-card: rgba(90, 60, 160, 0.15);
+  --bg-card: rgba(90, 60, 160, 0.18);
   --purple: #a87bff;
   --purple-soft: rgba(168, 123, 255, 0.35);
-  --text-main: #eae6ff;
+  --text-main: #f1ecff;
   --text-muted: #b8b2d8;
 }
 
 /* ===== BODY ===== */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: radial-gradient(circle at top, #1a0f3c, var(--bg-dark));
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -30,39 +30,46 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    radial-gradient(1.5px 1.5px at 20% 30%, #ffffff55, transparent),
-    radial-gradient(1px 1px at 80% 40%, #ffffff44, transparent),
-    radial-gradient(2px 2px at 60% 70%, #ffffff33, transparent),
-    radial-gradient(1.5px 1.5px at 30% 80%, #ffffff55, transparent),
-    radial-gradient(1px 1px at 90% 10%, #ffffff33, transparent);
-  background-size: 400px 400px;
-  animation: stars 140s linear infinite;
+    radial-gradient(1px 1px at 10% 20%, #ffffff88, transparent),
+    radial-gradient(2px 2px at 30% 80%, #ffffff66, transparent),
+    radial-gradient(1.5px 1.5px at 70% 30%, #ffffff55, transparent),
+    radial-gradient(1px 1px at 90% 60%, #ffffff77, transparent),
+    radial-gradient(2px 2px at 50% 50%, #ffffff44, transparent);
+  background-size: 300px 300px;
+  animation: stars 120s linear infinite;
   z-index: -1;
 }
 
 @keyframes stars {
   from { transform: translateY(0); }
-  to { transform: translateY(-400px); }
+  to { transform: translateY(-300px); }
 }
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3 {
   font-family: 'Orbitron', sans-serif;
   color: #ffffff;
+  letter-spacing: 0.05em;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 2.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
 }
 
 p {
   color: var(--text-muted);
+  font-size: 1rem;
 }
 
 /* ===== NAVBAR ===== */
@@ -72,7 +79,7 @@ nav {
   gap: 3rem;
   padding: 1.5rem;
   background: rgba(10, 5, 25, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -82,11 +89,13 @@ nav a {
   text-decoration: none;
   color: var(--text-main);
   font-weight: 500;
-  transition: color 0.3s ease;
+  letter-spacing: 0.08em;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
   color: var(--purple);
+  text-shadow: 0 0 8px rgba(168, 123, 255, 0.8);
 }
 
 /* ===== SECTIONS ===== */
@@ -127,20 +136,19 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  margin-top: 3rem;
 }
 
 .skill-card {
   background: var(--bg-card);
   border: 1px solid var(--purple-soft);
-  padding: 1.5rem;
-  border-radius: 16px;
+  padding: 1.6rem;
+  border-radius: 18px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(168, 123, 255, 0.45);
+  box-shadow: 0 0 28px rgba(168, 123, 255, 0.45);
 }
 
 /* ===== PROJECTS ===== */
@@ -149,7 +157,7 @@ nav a:hover {
   gap: 3rem;
   margin-bottom: 4rem;
   padding: 2rem;
-  border-radius: 18px;
+  border-radius: 20px;
   background: var(--bg-card);
   border: 1px solid var(--purple-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -157,7 +165,7 @@ nav a:hover {
 
 .project:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 30px rgba(168, 123, 255, 0.45);
+  box-shadow: 0 0 32px rgba(168, 123, 255, 0.45);
 }
 
 .project img {
@@ -173,10 +181,42 @@ nav a:hover {
   border-left: 3px solid var(--purple);
 }
 
+/* ===== EDUCATION ===== */
+#education p {
+  font-size: 1.05rem;
+}
+
 /* ===== BUTTONS ===== */
 .button {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.8rem 1.8rem;
+  padding: 0.9rem 2rem;
   border-radius: 30px;
-  background: linear-gradient(135deg, #
+  background: linear-gradient(135deg, #6f4bff, #b084ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(168, 123, 255, 0.7);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+  }
+}
