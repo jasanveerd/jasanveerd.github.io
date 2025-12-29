@@ -1,0 +1,56 @@
+<!-- ===== WHY SPACE ===== -->
+<section class="section">
+  <h2>Why Space?</h2>
+
+  <p>
+    My curiosity about space began in middle school when my teacher talked about the
+    Cassini mission and shared updates on its discoveries. Learning about a spacecraft
+    exploring another planet made space feel vast, unknown, and exciting.
+  </p>
+
+  <p>
+    During high school, watching SpaceX’s Demo-2 launch during the pandemic completely
+    captivated me. Seeing astronauts launch from Earth for the first time in nearly a
+    decade showed me how far human innovation has come—and how much farther we can still go.
+  </p>
+</section>
+
+<!-- ===== MOTOR CONTROL AND PROGRAMMING ===== -->
+<section class="section">
+  <h2>Motor Control and Programming</h2>
+  <p>
+    This section covers how we control robotic motors in space applications, including
+    the programming techniques needed for precise movement, automation, and adaptive
+    control systems.
+  </p>
+</section>
+
+<!-- ===== HARSH ENVIRONMENT ===== -->
+<section class="section">
+  <h2>Harsh Environment</h2>
+  <p>
+    Space presents extreme conditions—temperature swings, radiation, and vacuum—that
+    require specialized materials, designs, and safety considerations to ensure
+    equipment and missions function reliably.
+  </p>
+</section>
+
+<!-- ===== SPACE SYSTEM DESIGN ===== -->
+<section class="section">
+  <h2>Space System Design</h2>
+  <p>
+    Designing a space system requires integrating mechanical, electrical, and software
+    components into a cohesive and reliable spacecraft or instrument while meeting
+    strict performance, weight, and safety requirements.
+  </p>
+</section>
+
+<!-- ===== HARDWARE FOR ROBOTS ===== -->
+<section class="section">
+  <h2>Hardware for Robots</h2>
+  <p>
+    Robots in space rely on advanced hardware to operate effectively, including
+    sensors, actuators, controllers, and power systems that allow precise movement
+    and autonomous functioning under extreme conditions.
+  </p>
+</section>
